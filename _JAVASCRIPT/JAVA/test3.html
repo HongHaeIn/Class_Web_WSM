@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>자바스크립트</h1>
+    <button type="button" onclick= "alert('Hello Javascript');">클릭해보세요</button>
+    
+    <script>
+        document.write("<h1>Hello java world");
+        document.writeln("hello<br/>");
+        document.writeln("javascript")
+    </script>
+    <hr>
+    <script>
+        //prompt함수에서 받은 값을 name에 대입
+        var name = prompt("아이디를 입력하세요");
+        if(name == null){
+            document.write('취소 버튼을 누루셨습니다');
+        }else if(name == 'kim'){
+            document.write("아이디는"+name+"입니다");
+        }else{
+            document.write("입력되지 않았습니다");
+        }
+    </script>
+</body>
+</html>

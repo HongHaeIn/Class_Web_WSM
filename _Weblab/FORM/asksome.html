@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1p</title>
+</head>
+<body>
+    <h1>뭐먹지</h1>
+    <form method="post" action="#">
+        <input type="checkbox" name="check[]" value="지지고"checked/>지지고
+        <input type="checkbox" name="check[]" value="쌀국수"/>쌀국수
+        <input type="checkbox" name="check[]" value="뼈해장국"/>뼈해장국
+        <input type="checkbox" name="check[]" vlaue="초코쿠키라떼"checked/>초코쿠키라떼
+        <input type="checkbox" name="check[]" vlaue="떡볶이"/>떡볶이
+     </form>
+     <hr>
+     <h1>성별을 선택하시오</h1>
+     <form method="POST" action="#">
+        <input type="radio" name="gender" value="male">남성
+        <input type="radio" name="gender" value="female" checked>여성
+        <input type="submit" value="선택완료">
+    </form>
+<hr>
+<h1>사는 지역을 선택하세요</h1>
+<form method="post" action="#">
+    <select name="sel" multiple>
+        <option value="서울">서울</option>
+        <option value="부산" selected>부산</option>
+        <option value="대전">대전</option>
+        <option value="인천">인천</option>
+        <option value="제주">제주</option>
+    </select>
+</form>
+<hr>
+<form method="POST" action="#">
+    아이디입력<input type="text" name="uid" placeholder="아이디입력">
+    <input type="reset" value="로그인">
+    <input type="reset" value="다시작성"><br/>
+    <input type="image" src="img/lion1.JPG">
+    <button type="button"><input type="image" src="img/lion1.JPG"></button>
+</form>
+<hr>
+<form method="post" action="#">
+    <textarea name="txt" rows="15" cols="50">글을 입력하세요</textarea>
+</form>
+
+</body>
+</html>

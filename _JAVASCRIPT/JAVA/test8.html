@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+           
+           function ticket(x){
+                if(x<=7){
+                    document.write("무료입니다");
+                }else if((8<=x)&&(x<=15)){
+                    document.write("8세부터 15세는"+2000-(2000*0.1)+"원 입니다");
+                }else if(x>=65){
+                    document.write("65세 이상은"+2000-(2000*0.2)+"원 입니다");
+                }else{
+                    document.write("2000원 입니다");
+                }
+           }
+           var age= parseInt(prompt("나이를 입력하세요")) ;
+           ticket(age);
+
+        
+        
+    </script>
+    <!-- 함수 만들기 -> 함수 호출하기 -->
+</body>
+</html>

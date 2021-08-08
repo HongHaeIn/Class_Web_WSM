@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4p</title>
+</head>
+<body>
+    <form method="POST" action="#">
+            <input type="color" value="#ff0000"
+            onchange="document.body.style.color=this.value">
+             
+            <input type="month" value="2020-06"><br>
+            <input type="week" value="2020-w36"><br>
+            <input type="datae" value="2020-06-16"><br>
+            <input type="time"><br>
+            <input type="number" min="0.0" max="10.0" step="0.5"><br>
+            <input type="range" min="10" max="30" list="temperatures">
+            <datalist id="temperatures">
+                <option value="12" label="low">low</option>
+                <option value="20" label="medium">medium</option>
+                <option value="28" label="hight">hight</option>
+            </datalist>
+            <input type="email" placeholder="id@localhost"><br>
+            <input type="submit" value="이메일 보내기"><br>
+            <input type="tel" placeholder="010-8997-5892"><br>
+            <input type="search" placeholder="검색어">
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid black;
+        }
+        .container{
+            display: grid;
+            /* grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 150px 200px; */
+            border: 1px solid black;
+            grid-template-rows: minmax(100px auto);
+        }
+        .item1{
+            background-color: rgb(255, 255, 102);
+        }
+        .item2{
+            background-color: rgb(255, 118, 108);
+        }
+        .item3{
+            background-color: rgb(92, 166, 250);
+        }
+        .item4{
+            background-color: rgb(248, 114, 237);
+        }
+        .item5{
+            background-color: rgb(138, 117, 255);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1"><h1>box1</h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, amet?</div>
+        <div class="item2"><h1>box2</h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, amet?</div>
+        <div class="item3"><h1>box3</h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, amet?</div>
+        <div class="item4"><h1>box4</h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, amet?</div>
+        <div class="item5"><h1>box5</h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, amet?</div>
+    </div>
+</body>
+</html>

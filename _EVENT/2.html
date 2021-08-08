@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>2.html</title>
+</head>
+<body>
+    <p id="first" >버튼 1 글자</p>
+    <button type="button" onclick="first.style.color='white';first.style.fontWeight='bold'; first.style.backgroundColor='yellow';first.style.fontSize='1.2rem'">버튼1</button>
+<hr>
+    <p id="second">버튼 2 글자</p>
+    <button id="btn" type="button">버튼2</button>
+    <script>
+        var second=document.getElementById("second");
+        var btn=document.querySelector("#btn");
+        btn.onclick=clickHandler; 
+        function clickHandler(){
+            second.style.backgroundColor="blue"; 
+            second.style.color='white';
+            second.style.fontWeight='bold'; 
+            second.style.fontSize='1.2rem';
+        }
+    </script>
+    
+<hr>
+    <p id="third">버튼 3 글자</p>
+    <button id="btn3" type="button" >버튼3</button>
+    <script>
+        var third=document.getElementById("third");
+        var btn3=document.querySelector("#btn3");
+        btn3.addEventListener("click", clickHandler);
+        function clickHandler(){
+            third.style.backgroundColor="salmon";
+            third.style.color="white";
+            third.style.fontWeight='bold'; 
+            third.style.fontSize='1.2rem';
+        }
+    </script>
+<hr>
+    <p id="forth">버튼 4 글자</p>
+    <button id="btn4" type="button">버튼4</button>
+    <script>
+        var forth=document.getElementById("forth");
+         forth.addEventListener("onclick", function() {
+            forth.style.backgroundColor="black";
+            forth.style.color="white";
+            forth.style.fontWeight='bold'; 
+            forth.style.fontSize='1.2rem';
+          });
+  </script>
+</body>
+</html>

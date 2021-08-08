@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px; height: 200px; border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>이벤트 핸들러 연습</h1>
+    <div id="box1" onmouseenter="this.style.backgroundColor='red'";
+    onmouseleave="this.style.backgroundColor='blue'">1. 태그내에 작성</div>
+
+    <div id="box2">2.Dom객체 속성으로 이벤트 핸들러 대입</div>
+    <script>
+        var box2=document.getElementById("box2");
+        box2.onmouseenter=enter;
+        function enter(){
+            box2.style.background="salmon";
+        }
+        box2.onmouseleave=leave;
+        function leave(){
+            box2.style.backgroundColor="#ffd67e";
+        }
+    </script>
+
+    <div id="box3">3. addEventListener</div>
+    <script>
+        var box3=document.querySelector("#box3");
+        box3.addEventListener("mouseenter", function(){
+            box3.style.backgroundColor="green";
+        })
+        var box3=document.querySelector("#box3");
+        box3.addEventListener("mouseleave, function(){
+            box3.style.backgroundColor="yellow";
+        })
+    </script>
+</body>
+</html>

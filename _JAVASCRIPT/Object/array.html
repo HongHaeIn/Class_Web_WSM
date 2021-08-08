@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array객체</h1>
+    <h2>concay메서드</h2>
+    <script>
+        let fruits=["apple","banana","grape","melon","watemelon"];
+        let animals = ["dog","cat","cow","horse","lion"];
+        let temp;
+        // for(let i=0; i<fruits.length; i++){
+        //     document.write(fruits[i]+", ");
+        // }
+        temp = fruits.concat(animals);
+        //fruists배열에 animals배열을 합쳐서temp에 대입
+        document.write("temp    "+temp);
+        document.write("<h1>join(speprator 구분자</h1>");
+        temp=fruits.join("|");
+        // 이어주기 | 이걸로
+        document.write(temp);
+
+        document.write("<h1>slice(idx, idz)</h1>");
+        temp=fruits.slice(1, 3);
+        //1부터 3-1Rkwldml rkqt rkwudhrl
+        document.write(temp);
+    </script>
+    <h2>join(seperator 구분자)</h2>
+    <script></script>
+</body>
+</html>

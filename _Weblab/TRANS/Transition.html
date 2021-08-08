@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       div{
+           width: 100px;
+           height: 100px;
+            border: 1px dotted blue;
+            background-color: royalblue;
+            transition:width 5s, border 5s, color 5s, transform 5s;
+       }
+       
+       div:hover{
+            width:300px; 
+            border: 10px groove salmon;
+            transform: rotate(180deg);
+            background-color: sandybrown;
+       }
+    </style>
+</head>
+<body>
+    <h1>transition 속성 변화</h1>
+    <div>transition</div>
+</body>
+</html>

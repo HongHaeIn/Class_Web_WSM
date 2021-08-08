@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1320홍해인</title>
+    <style>
+        .container{
+            display:grid;
+            border:1px solid gray;
+            height:740px;
+        }
+        .HTML5{
+            grid-area:HTML5;
+        }
+        .CSS3{
+            grid-area:CSS3;
+        }
+        .Javascript{
+            grid-area:Javascript;
+        }
+        .Nodejs{
+            grid-area:Nodejs;
+        }
+        .JQuery{
+            grid-area:JQuery;
+        }
+
+        @media (min-width:641px){
+            .container{
+                grid-template-columns:repeat(3,1fr);
+                grid-template-areas:
+                    'HTML5 HTML5 HTML5'
+                    'CSS3 CSS3 Javascript'
+                    'Nodejs JQuery JQuery';
+            }
+            .HTML5{
+                background-color:rgb(205, 219, 248);
+            }
+            .CSS3{
+                background-color:rgb(166, 194, 252);
+            }
+            .Javascript{
+                background-color:rgb(133, 174, 255);
+            }
+            .Nodejs{
+                background-color:rgb(95, 148, 255);
+            }
+            .JQuery{
+                background-color:rgb(77, 136, 255);
+            }
+        }
+        @media (max-width:640px){
+            .container{
+                grid-template-columns:1fr;
+                grid-template-areas:
+                    'HTML5'
+                    'CSS3'
+                    'Javascript'
+                    'Nodejs'
+                    'JQuery';
+            }
+            .HTML5{
+                background-color:rgb(252, 237, 190);
+            }
+            .CSS3{
+                background-color:rgb(250, 226, 154);
+            }
+            .Javascript{
+                background-color:rgb(255, 220, 116);
+            }
+            .Nodejs{
+                background-color:rgb(253, 214, 98);
+            }
+            .JQuery{
+                background-color:rgb(255, 203, 49);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="HTML5">HTML5</div>
+        <div class="CSS3">CSS3</div>
+        <div class="Javascript">Javascript</div>
+        <div class="Nodejs">Nodejs</div>
+        <div class="JQuery">JQuery</div>
+    </div>
+</body>
+</html>

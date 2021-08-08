@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* span{
+            border: 1px solid red;
+        } */
+        div{
+            border: 1px solid blue;
+        }
+        .block{ 
+            display: block;
+            border: 3px dotted green;
+            width: 500px;
+            height: 200px;
+         }
+         div div{
+             display: inline;
+             border: 3px dotted yellow;
+             padding: 10px;
+         }
+        ul li{
+             list-style: none;
+             display: inline;
+             background-color: tomato;
+             
+         }
+         a:link{
+             text-decoration: none;
+             color: #333333;
+         }
+         a:visited{
+             text-decoration: none;
+         }
+         a:hover{
+             text-decoration: underline;
+             background-color: yellowgreen;
+             font-size: 20px;
+         }
+         a:active{
+             text-decoration: underline;
+            
+         }
+    </style>
+</head>
+<body>
+    <div>
+        <span>inline1</span>
+        <span class="block">inline2</span>
+    </div>
+    <div>
+        <div>inline</div>
+        <div>inline</div>
+        <div>inline</div>
+    </div>
+    <hr>
+    <ul>
+        <li><a href="#">홈으로</a></li>
+        <li><a href="#">전화예약</a></li>
+        <li><a href="#">온라인예약</a></li>
+        <li><a href="#">방문예약</li></a>
+        <li><a href="#">실시간예약</a></li>
+    </ul>
+</body>
+</html>

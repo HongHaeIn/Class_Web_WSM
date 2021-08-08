@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #one{
+            background-color: rgb(205, 229, 192);
+            width:200px;
+            height: 50px;
+        }
+        #wrap{
+            background-color: rgb(108, 200, 228);
+            width:500px;
+            height:300px;
+            position: relative;
+        }
+        #two{
+            background-color: rgb(201, 57, 182);
+            width:200px;
+            height: 50px;
+            position: absolute;
+        }
+        #three{
+            background-color: rgb(216, 15, 32);
+            width:200px;
+            height: 50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>부모는 relative, 자식은 absolute</h1>
+    <p id="one">block #1</p>
+    <div id="wrap">
+        container<br>
+        <div id="two">block #2</div>
+        position:absolute
+    </div>
+    <p id="three">block #3</p>
+</body>
+</html>

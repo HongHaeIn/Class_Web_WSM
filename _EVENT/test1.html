@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>1. 태그내에 이벤트 핸들러 작성</h1>
+    <!--마우스 올렸을때 배경색 다저블루 onmouseover
+    //마우스 벗어났을때 배경생 핑크 onmouseout -->
+    <p id="first" onmouseover="this.style.backgroundColor='dodgerblue'" 
+                  onmouseout="this.style.backgroundColor='pink'">태그내에 이벤트 핸들러 작성</p>
+
+    <p id="first2" onmouseover="this.style.backgroundColor='pink'" 
+                  onmouseout="this.style.backgroundColor='dodgerblue'">태그내에 이벤트 핸들러 작성</p>
+
+
+ <h1>2. DOM객체의 속성으로 이벤트 핸들러 작성</h1>
+    <p id="second">DOM객체의 속성으로 이벤트 핸들러 작성</p> 
+    <script>
+        //21번애 가지고 와서 second에 대입
+        var second=document.querySelector("#second");  //second 타입: 객체 // 태그
+        second.onmouseover=over;
+        //세컨트객체에 마우스오버 이벤트가 발생했을때 오버라는 이벤트핸들러(함수)발생
+        //객체의 속성으로 이벤트를 설정하고 이벤트 핸들러 대입
+        function over(){
+            second.style.backgroundColor="green";
+        }
+        second.onmouseout=out;
+        function out(){
+            second.style.backgroundColor="yellow";
+        }
+    </script>
+
+
+<h1>addEventLisner(이벤트이름, 이벤트핸들러) 사용</h1>
+     <p id="third">addEventLisner(이벤트이름, 이벤트핸들러)로 이벤트 </p>
+     <script>
+         var third=document.getElementById("third");
+         third.addEventListener("mouseover", mouseover1);
+         function mouseover1(){
+             //마우스 올라갔을때 배경변경
+            third.style.backgroundColor="gray";
+         }
+        third.addEventListener("mouseout", mouseout1);
+            //마우스 아웃했을때 배경변경
+        function mouseout1(){
+            third.style.backgroundColor="salmon";
+        }
+     </script>
+
+ <h1>4. 익명함수 사용</h1>
+    <p id="four">익명함수 사용</p>
+    <script>
+       var third=document.getElementById("four");
+        third.addEventListener("mouseover", function() {
+           four.style.backgroundColor="skyblue";
+         });
+        third.addEventListener("mouseout", function() {
+            four.style.backgroundColor="hotpink";
+          });
+ </script>
+     
+</body>
+</html>

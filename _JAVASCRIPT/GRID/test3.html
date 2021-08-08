@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-areas:
+            'header header header'
+            'sidebar-a main sidebar-b'
+            ' footder  footder  footder'
+        }
+        .item{
+            border: 1px solid black;
+        }
+        /*이름정의*/
+        .header{
+            grid-area: header;
+        }
+        .sidebar-a{
+            grid-area: sidebar-a;
+        }
+        .sidebar-b{
+            grid-area: sidebar-b;
+        }
+        .main{
+            grid-area: main;
+        }
+        .footder{
+            grid-area: footder;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item header">Header</div>
+        <div class="item sidebar-a">sidebar-a</div>
+        <div class="item sidebar-b">sidebar-b</div>
+        <div class="item main">main</div>
+        <div class="item footder">footder</div>
+        
+    </div>
+</body>
+</html>
